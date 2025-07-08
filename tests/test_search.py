@@ -8,7 +8,7 @@ import pytest
 from pages.result import DuckDuckGoResultPage
 from pages.search import DuckDuckGoSearchPage
 
-@pytest.mark.parametrize('Phrase',['panda','t-shirt','polar bear'])
+@pytest.mark.parametrize('Phrase',['panda','cat','polar bear'])
 def test_basic_duckduckgo_search(browser, Phrase):
     search_pg = DuckDuckGoSearchPage(browser)
     result_pg = DuckDuckGoResultPage(browser)
